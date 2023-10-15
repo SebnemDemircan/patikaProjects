@@ -26,7 +26,8 @@ Best case: Aradığımız sayının dizinin en başında olması.
 [2, 6, 16, 18, 22, 27] (6 sıralı bölgeye taşındı.)
 Insertion Sort'un Big-O gösterimi O(n^2)’dir.
 
-Dizi sıralandıktan sonra 18 sayısı Worst case (en kötü durum) kapsamına girer. Çünkü en kötü durumda, aradığınız öğenin dizinin sonunda olması durumunda, algoritma tüm diziyi en iyi durumdaki gibi tarar ve bu nedenle en kötü durum zaman karmaşıklığına sahiptir.
+Dizi sıralandıktan sonra 18 sayısı Worst case (en kötü durum) kapsamına girer. Çünkü en kötü durumda, aradığınız öğenin dizinin sonunda olması durumunda, 
+algoritma tüm diziyi en iyi durumdaki gibi tarar ve bu nedenle en kötü durum zaman karmaşıklığına sahiptir.
 
 [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımı:
 
