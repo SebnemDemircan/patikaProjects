@@ -1,0 +1,47 @@
+# PROJE 2 / MERGE SORT PROJESI
+
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+////////////////////////////////////////////////////////////////////
+## 1) Bölme (Divide):
+İlk adımda, diziyi iki yaklaşık olarak eşit boyutlu alt dizilere bölün. Bu bölme işlemi, diziyi ikiye bölmek ve her iki yarıyı ayrı ayrı sıralamak için yinelecektir.
+
+Dizi: [16, 21, 11] ve [8, 12, 22]
+
+## 2)Bölme İşlemi (Recursion):
+Her iki alt dizi için de aynı bölme işlemi tekrarlanır.
+
+Sol Alt Dizi: [16, 21, 11]
+Sağ Alt Dizi: [8, 12, 22]
+
+Sol Alt Dizi Bölme İşlemi:
+
+[16, 21, 11] -> [16] ve [21, 11] -> [21] ve [11]
+Sağ Alt Dizi Bölme İşlemi:
+
+[8, 12, 22] -> [8] ve [12, 22] -> [12] ve [22]
+
+## 3)Birleştirme (Merge):
+Sıralama işlemi, alt diziler birleştirilerek gerçekleştirilir. Bu aşamada, birleştirme işlemi sırasında alt diziler karşılaştırılır ve sıralanır.
+
+Sol Alt Dizi Birleştirme İşlemi:
+
+[16] ve [21] ve [11] -> [11, 16, 21]
+Sağ Alt Dizi Birleştirme İşlemi:
+
+[8] ve [12] ve [22] -> [8, 12, 22]
+
+## 4)Son Birleştirme (Final Merge):
+Son olarak, iki sıralı alt dizi (sol ve sağ) birleştirilerek orijinal diziyi sıralanmış bir hale getirilir.
+
+Son Birleştirme:
+
+[11, 16, 21] ve [8, 12, 22] -> [8, 11, 12, 16, 21, 22]
+Dizi artık sıralanmış durumdadır: [8, 11, 12, 16, 21, 22].
+
+## Merge Sort'un Big-O Gösterimi:
+Merge Sort, her iki alt diziyi bölme işlemi sırasında logaritmik olarak böler (O(log n)), ardından her iki alt diziyi birleştirme işlemi sırasında toplam n elemanı karşılaştırır (O(n)). 
+Bu nedenle Merge Sort'un Big-O gösterimi O(n * log n) olarak ifade edilir. Bu, Merge Sort'un veri sıralama işlemi için oldukça etkili bir algoritma olduğunu gösterir.
